@@ -1,0 +1,16 @@
+import java.io.DataInputStream;
+public class Addition{
+   public static void main(String args[]){
+     int i=0, j=0, result;
+     DataInputStream a = new DataInputStream(System.in);
+     try{ 
+        System.out.println("Enter the 1st no.");
+        i = Integer.parseInt(a.readLine());
+        System.out.println("Enter the 2nd no.");
+        j = Integer.parseInt(a.readLine());
+        }
+     catch (Exception e) { }   
+     result = i+j;
+     System.out.println("The result is : "+result);
+     } 
+}       
