@@ -1,6 +1,8 @@
 //To display the sum of the first 10 even nos.
 
-
+/* 25_SHRUTI KUVEKAR
+   SE-EXTC
+   SKILL LAB(JAVA)*/
 
 import java.util.Scanner;
     public class Sum{
