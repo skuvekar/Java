@@ -1,5 +1,9 @@
 //To accept three values from user and display the largest
 
+/* 25_SHRUTI KUVEKAR
+   SE-EXTC
+   SKILL LAB(JAVA)*/
+
 import java.util.Scanner;
     public class Coparison{
         public static void main(String[]args){
