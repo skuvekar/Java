@@ -1,0 +1,16 @@
+//To display the sum of the first 10 even nos.
+
+
+
+import java.util.Scanner;
+    public class Sum{
+        public static void main(String[]args){
+        int i=0, result=0;
+        do{
+           result = result+i;
+           i = i+2;
+        }
+        while (i < 20);
+        System.out.println("The result is:"+result);
+         } 
+    }
