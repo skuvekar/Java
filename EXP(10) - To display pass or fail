@@ -5,32 +5,17 @@
    SKILL LAB(JAVA)*/
 
 import java.util.Scanner;
-    
 public class Marks{
-        
-public static void main(String[]args){
-        
-int n, p = 40;
-        
-Scanner mks = new Scanner(System.in);
-        
-System.out.println("Enter the marks of students:");
-         
-n = mks.nextInt();
-        
-   if (n > p){
-           
-     System.out.println("Pass");
-        
-}
-
-   else{
-            
-       System.out.println("Fail");
-          
+  public static void main(String[]args){
+     int n, p = 40;
+     Scanner mks = new Scanner(System.in);
+     System.out.println("Enter the marks of students:");
+     n = mks.nextInt();
+     if (n > p){
+         System.out.println("Pass");
        }
-         
-   
-    } 
-    
-}
+     else{
+         System.out.println("Fail");
+         }
+      } 
+   }
