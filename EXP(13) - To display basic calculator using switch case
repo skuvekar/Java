@@ -1,0 +1,50 @@
+//To display basic calculator using switch case
+
+/* 25_SHRUTI KUVEKAR  
+   SE-EXTC
+   SKILL LAB*/
+   
+import java.util.Scanner;
+public class Calci{
+    public static void main(String args[]) {
+      float x, y, result;
+      char op, again;
+      Scanner obj =  new Scanner(System.in);
+       System.out.println("Enter the two values to perform the operation: "); 
+         x = obj.nextInt();
+         y = obj.nextInt();
+        System.out.println("Enter the operation you want to perform (+, -, /, *): ");
+        op = obj.next().charAt(0);
+        switch (op){
+          case'+':
+              result = x+y;
+               System.out.println("The result is: "+result);
+               break;
+               
+          case'-':
+              {if(x>y){
+                  result = x-y;
+                  break;}
+              else{
+                  result = y-x;
+                  break;}
+              }
+      
+          case'*':
+              result = x*y;
+              break;
+          
+          case'/':
+                result = x/y;
+                System.out.println("The result is: "+result);
+                break;
+            
+          default: 
+            {System.out.println("Invalid operation.");
+            }
+           } 
+        }
+   }   
+   
+ 
+   
