@@ -1,0 +1,23 @@
+//To accept and display the string entered and execute 5 different functions
+
+/* 25_SHRUTI KUVEKAR 
+   SE EXTC 
+   SKILL LAB*/
+   
+  import java.util.Scanner;
+  public class Strf{
+      public static void main(String[]args){
+        Scanner s = new Scanner(System.in);
+        String str1 = "The name of the patient is ";
+        System.out.println("Enter the name of the patient:");
+        String str = s.nextLine(); 
+        String s1 = str1.concat(str);
+        System.out.println(""+s1);
+        System.out.println(str.charAt(3));
+        System.out.println(str.toUpperCase());
+        System.out.println(str.length());
+        System.out.println(str.toLowerCase());
+        
+        
+      }  
+    }
