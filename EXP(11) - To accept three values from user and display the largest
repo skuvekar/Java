@@ -5,7 +5,7 @@
    SKILL LAB(JAVA)*/
 
 import java.util.Scanner;
-    public class Coparison{
+    public class Comparison{
         public static void main(String[]args){
         int a,b,c;
         Scanner obj = new Scanner(System.in);
