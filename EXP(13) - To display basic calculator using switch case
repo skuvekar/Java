@@ -24,9 +24,11 @@ public class Calci{
           case'-':
               {if(x>y){
                   result = x-y;
+                  System.out.println("The result is: "+result);
                   break;}
               else{
                   result = y-x;
+                  System.out.println("The result is: "+result);
                   break;}
               }
       
