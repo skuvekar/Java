@@ -1,0 +1,23 @@
+//Illustrate method of overloading
+
+/* 25_SHRUTI KUVEKAR
+   SE-EXTC
+   SKILL LAB*/
+   
+   import java.util.Scanner;
+   public class Addition{
+       public void add(float i, float j)
+          { System.out.println("The sum of "+ i +" and "+ j +" is "+(i+j));
+            }
+            
+       public void add(float i, float j, float k)
+          { System.out.println("\n"+"The sum of "+ i +", " + j +" and "+ k +" is "+(i+j+k));
+            }        
+            
+       public static void main(String args[])
+          { Addition obj = new Addition();
+            obj.add(5,4);
+            Addition ab = new Addition();
+            ab.add(6,7,5);
+          }
+   }
