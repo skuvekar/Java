@@ -1,3 +1,7 @@
+*/25_SHRUTI KUVEKAR
+  SE EXTC
+  SKILL LAB*/
+
 class First extends Thread
 {
     int i;
