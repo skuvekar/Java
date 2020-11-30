@@ -1,0 +1,56 @@
+class First extends Thread
+{
+    int i;
+
+        public void run()
+        {
+            try
+            {
+                for(i=0 ; i <= 5; i++)
+                {
+                    System.out.println("I = "+i);
+                    Thread.sleep(100);
+                }
+            }
+            catch(Exception e)
+            {
+                System.out.println("Error is: "+e);
+            }
+        }
+
+}
+
+class Sec extends Thread
+{
+    int j;
+
+        public void run()
+        {
+            try
+            {
+            for(j=0 ; j <= 5; j++)
+            {
+                System.out.println("J = "+j);
+                Thread.sleep(100);
+            }
+        }
+        catch(Exception e)
+        {
+            System.out.println("Error is:"+e);
+        }
+    
+        }
+    
+}
+public class MyThread 
+{
+    public static void main(String args[])
+    {
+           First obj = new First();
+           Sec obj1 = new Sec();
+           
+           obj.start();
+           obj1.start();
+
+    }
+}
