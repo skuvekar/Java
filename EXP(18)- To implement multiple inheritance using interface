@@ -13,7 +13,7 @@
    }
    
    class Records{
-        String nm; String nmdoc;
+        
        
        public void ent(){
          System.out.println("Welcome to Nalanda Vishwavidyalay!");
