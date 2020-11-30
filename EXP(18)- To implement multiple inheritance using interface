@@ -1,0 +1,38 @@
+//To implement multiple inheritance using interface
+
+/* 25_SHRUTI KUVEKAR
+   SE-EXTC
+   SKILL LAB*/
+   
+   import java.util.Scanner;
+ 
+   interface Books{
+     static String ay = "Ayurveda";
+     public void display();
+     
+   }
+   
+   class Records{
+        String nm; String nmdoc;
+       
+       public void ent(){
+         System.out.println("Welcome to Nalanda Vishwavidyalay!");
+       }  
+   }
+   
+    public class Sys extends Records implements Books{
+
+        public void display(){
+            System.out.println("\n"+Books.ay+" is a book available here.");
+        }
+        
+        
+        public static void main(String args[]){
+             Sys obj = new Sys();
+             Sys obj1 = new Sys();
+             obj.ent();
+             obj1.display();
+             
+        }
+         
+    }    
