@@ -6,7 +6,7 @@ class First extends Thread
 {
     int i;
 
-        public void run()
+        public void first()
         {
             try
             {
@@ -28,7 +28,7 @@ class Sec extends Thread
 {
     int j;
 
-        public void run()
+        public void ()
         {
             try
             {
@@ -57,4 +57,56 @@ public class MyThread
            obj1.start();
 
     }
-}
+}class A extends Thread
+   {
+     int i;
+         public void run()
+        {
+            try
+            {
+               for(i=0; i <= 6; i++)
+               {
+                  System.out.println("I = "+i);
+                  Thread.sleep(1000);
+                }
+            }
+            catch(Exception e)
+           {
+            System.out.println("Error is:" +e);
+           }
+       }   
+   }
+   
+class B extends Thread
+   {
+      int j;
+           public void run()
+        {
+           try
+           
+           {
+               for(j=0; j <= 6; j++)
+               {
+                  System.out.println("J = "+j);
+                  Thread.sleep(1000);
+                }
+           }
+          catch(Exception e)
+          
+          {
+            System.out.println("Error is:" +e);
+           }
+       }
+   }
+   
+   public class Abdemo
+   {
+       public static void main(String arg[])
+       {
+           A obj = new A();
+           B obj1 = new B();
+           obj.start();
+           obj1.start();
+       }
+   }
+
