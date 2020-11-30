@@ -1,3 +1,9 @@
+//To read and display the nos. as command line arguments and display the addition of them
+
+/* 25_SHRUTI KUVEKAR
+   SE-EXTC
+   SKILL LAB*/
+  
 public class Arguments{
     public static void main(String args[]){
         int arg = args.length;
