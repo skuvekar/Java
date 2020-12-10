@@ -1,0 +1,12 @@
+//To demonstrate hello world program in APPLET
+/* 25_SHRUTI KUVEKAR
+   SE-EXTC
+   SKILL LAB*/
+   
+   import java.applet.*;
+   import java.awt.*;
+   public class Hello extends Applet{
+              public void paint(Graphics g){
+                g.drawString("Hello World!!",20,20);
+              }
+   }
