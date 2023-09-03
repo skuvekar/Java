@@ -1,0 +1,29 @@
+import java.util.HashSet;
+import java.util.LinkedHashSet;
+import java.util.TreeSet;
+public class SetInterfaceClasses{
+    public static void main(String [] args){
+        //does not maintain insertion order
+        HashSet h = new HashSet();
+        h.add("Hello");
+        h.add(10);
+        h.add(20);
+        h.add('c');
+        System.out.println(h);
+        
+        //Maintains insertion order
+        LinkedHashSet lh = new LinkedHashSet();
+        lh.add("Hello hey");
+        lh.add(14);
+        lh.add(29);
+        lh.add('a');
+        System.out.println(lh);
+        
+        //Allows Heterogenous
+        TreeSet t = new TreeSet();
+        t.add(90);
+        t.add(14);
+        t.add(29);
+        System.out.println(t);
+    }
+}
