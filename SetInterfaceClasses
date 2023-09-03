@@ -19,7 +19,7 @@ public class SetInterfaceClasses{
         lh.add('a');
         System.out.println(lh);
         
-        //Allows Heterogenous
+        //Allows only Homogeneous objects and ordes them in the ascending order of their ascii values
         TreeSet t = new TreeSet();
         t.add(90);
         t.add(14);
