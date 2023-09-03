@@ -1,0 +1,18 @@
+//wap to remove duplicates from the ArrayList
+import java.util.ArrayList;
+import java.util.LinkedHashSet;
+public class DuplicatesArrayList{
+    public static void main(String [] args){
+        ArrayList a = new ArrayList();
+        a.add(10);
+        a.add("Shruti");
+        a.add(10);
+        a.add("Hey");
+        a.add("shruti");
+        System.out.println(a);
+        
+        LinkedHashSet h = new LinkedHashSet(a);
+        System.out.println(h);
+        
+    }
+}
