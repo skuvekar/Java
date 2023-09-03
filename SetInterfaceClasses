@@ -9,6 +9,7 @@ public class SetInterfaceClasses{
         h.add(10);
         h.add(20);
         h.add('c');
+        h.add(null);
         System.out.println(h);
         
         //Maintains insertion order
@@ -17,13 +18,15 @@ public class SetInterfaceClasses{
         lh.add(14);
         lh.add(29);
         lh.add('a');
+        lh.add(null);
         System.out.println(lh);
         
         //Allows only Homogeneous objects and ordes them in the ascending order of their ascii values
         TreeSet t = new TreeSet();
-        t.add(90);
-        t.add(14);
-        t.add(29);
+        t.add('R');
+        t.add('a');
+        t.add('A');
+        //t.add(null);->java.lang.NullPointerException
         System.out.println(t);
     }
 }
