@@ -1,0 +1,22 @@
+//wap to convert map into list
+
+import java.util.*;
+public class ConvertMapToList{
+    public static void main(String [] args){
+        LinkedHashMap lm = new LinkedHashMap();
+        lm.put("Shruti", 65.69);
+        lm.put("Dhriti", 97.0);
+        lm.put("Jhanvi",89);
+        lm.put("Nehal", 76);
+        
+        Collection c1=lm.keySet();
+        Collection c2=lm.values();
+        System.out.println(c1);
+        System.out.println(c2);
+        
+        ArrayList a1 = new ArrayList();
+        a1.addAll(c1);
+        a1.addAll(c2);
+        System.out.println(a1);
+    }
+}
