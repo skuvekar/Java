@@ -1,0 +1,75 @@
+import java.util.ArrayList;
+public class ArrayListMethods {
+    public static void main(String args[]) {
+        ArrayList Hotel = new ArrayList();
+        
+        Hotel.add("Sandwiches");
+        Hotel.add("Frankie");
+        Hotel.add("FrenchFries");
+        Hotel.add("Burger");
+        Hotel.add("Pizza");
+        Hotel.add("MalaiKulfi");
+        Hotel.add("Pastry");
+        
+        ArrayList mh = new ArrayList();
+        mh.add("puranpoli");
+        mh.add("misalpav");
+        mh.add("vegkohlapuri");
+        mh.add("solkadhi");
+        mh.add("aluvadi");
+        
+        ArrayList guj = new ArrayList();
+        guj.add("daldhokli");
+        guj.add("undhiyu");
+        guj.add("dhokla");
+        guj.add("thepla");
+        guj.add("khandvi");
+        guj.add("fafda");
+        
+        Hotel.addAll(mh);
+        Hotel.addAll(guj);
+        
+        System.out.println(Hotel);
+        
+        Hotel.add(3, "hey");
+        System.out.println(Hotel);
+        
+        ArrayList south = new ArrayList();
+        south.add("Dosa");
+        south.add("MenduVada");
+        south.add("Uttappa");
+        south.add("Upma");
+        south.add("Pysum");
+        
+        Hotel.addAll(3, south);
+        
+        System.out.println(Hotel);
+        
+        Hotel.remove("hey");
+        
+        System.out.println(Hotel);
+        
+        // Hotel.remove(3);
+        // System.out.println(Hotel);
+        
+        Hotel.removeAll(south);
+        System.out.println(Hotel);
+        
+        ArrayList north = new ArrayList();
+        north.add("malai paneer");
+        north.add("malai kofta");
+        north.add("kadhai paneer");
+        north.add("Butter naan");
+        
+        System.out.println(north);
+        
+        // north.clear();
+        System.out.println();
+        System.out.print("north: ");
+        System.out.println();
+        for(Object a:north){
+            System.out.println();
+            System.out.println(a);
+        }
+    }
+}
