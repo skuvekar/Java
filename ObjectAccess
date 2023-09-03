@@ -1,0 +1,43 @@
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.ListIterator;
+public class ObjectAccess{
+    public static void main(String [] args){
+        ArrayList north = new ArrayList();
+        north.add("malai paneer");
+        north.add("malai kofta");
+        north.add("kadhai paneer");
+        north.add("Butter naan");
+        
+        System.out.println(north);
+        
+        // north.clear();
+        System.out.println();
+        System.out.print("north: ");
+        System.out.println();
+        for(Object a:north){
+            System.out.println();
+            System.out.println(a);
+        }
+        System.out.println("---------------------------------------------");
+        System.out.println("Using Iterator-Forward direction");
+        Iterator i = north.iterator();
+        while(i.hasNext()){
+            System.out.println(i.next());
+        }
+        
+        System.out.println("----------------------------------------------");
+        System.out.println("Using ListIterator-Forward direction");
+        ListIterator li = north.listIterator();
+        while(li.hasNext()){
+            System.out.println(li.next());
+        }
+        
+        System.out.println("----------------------------------------------");
+        System.out.println("Using ListIterator-Backward direction");
+        // ListIterator li = north.listIterator();
+        while(li.hasPrevious()){
+            System.out.println(li.previous());
+        }
+    }
+}
